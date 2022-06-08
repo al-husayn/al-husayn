@@ -94,7 +94,7 @@
 </details>
 
  <details>
- <summary>:zap: Streaks</summary>
+    <summary>:zap: Activity Graph</summary>
 
 [![AL Drake github activity graph](https://activity-graph.herokuapp.com/graph?username=al-husayn&theme=dracula)](https://github.com/al-husayn/github-readme-activity-graph)
 </details>
