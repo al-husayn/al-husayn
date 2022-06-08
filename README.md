@@ -75,13 +75,17 @@
 > [My latest blog post will soon be available here]
 
 ---
- 
- <!-- [![AL Drake GitHub stats](https://github-readme-stats.vercel.app/api?username=al-husayn&show_icons=true&count_private=true&theme=cobalt2)](https://github.com/al-husayn/github-readme-stats) -->
- 
- [![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=al-husayn&count_private=true&theme=cobalt2&showicons=true)]()
- 
+ <details>
+ <summary>:zap: GitHub Stats</summary>
+
+  [![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=al-husayn&count_private=true&theme=cobalt2&showicons=true)]()
+ <details>
+ <summary>:zap: Language Stats</summary>
 
  [![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=al-husayn&langs_count=5&theme=cobalt2)]()
+ </details>
+
+ 
 
 [twitter]: https://twitter.com/al_drake3
 [youtube]:https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA
