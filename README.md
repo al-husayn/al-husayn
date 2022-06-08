@@ -1,7 +1,8 @@
 # Hi there, I'm Al-Hussein - aka [AL Drake][youtube] 👋 
 
-[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCDCHcqyeQgJ-jVSd6VJkbCw?logo=youtube&logoColor=red&style=for-the-badge)][youtube]
-[![Twitter Follow](https://img.shields.io/twitter/follow/al_drake3?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/al_drake3)
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc19yVrMKZ9tCy40hWEc3BA?style=social][youtube]
+[![Twitter Follow](https://img.shields.io/twitter/follow/al_drake3?style=social)](https://twitter.com/al_drake3)
+
 
 
 
