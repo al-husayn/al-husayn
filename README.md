@@ -5,7 +5,7 @@
 
 
 
-## I'm a Full Stack Developer and a IT Support Specialist!!
+## I'm a Software Developer and an IT Support Specialist!!
 
 
 - 🌱 I’m currently learning everything 🤣
