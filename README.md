@@ -12,7 +12,7 @@
 - 👯 I’m looking to collaborate with other developers
 - 🥅 2022 Goals: Learn more about React, Next JS, Typescript, Node JS, PostgreSQL and Tailwind CSS
 - ⚡ Fun fact: I love playing soccer, reading and surfing the internet
-
+- 📫 How to reach me atldrake532@gmail.com
 
 ### Connect with me:
 
