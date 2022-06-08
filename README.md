@@ -78,7 +78,7 @@
  <details>
  <summary>:zap: GitHub Stats</summary>
 
- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=al-husayn)](https://github.com/al-husayn/github-readme-stats)
+ [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=al-husayn&show_icons=true&count_private=true&theme=cobalt2)](https://github.com/al-husayn/github-readme-stats)
  </details>
 
 [twitter]: https://twitter.com/al_drake3
