@@ -9,7 +9,7 @@
 
 
 - 🌱 I’m currently learning everything 🤣
-- 👯 I’m looking to collaborate with other content creators
+- 👯 I’m looking to collaborate with other developers
 - 🥅 2022 Goals: Learn more about web3
 - ⚡ Fun fact: I love play soccer, reading and surfing the internet
 
