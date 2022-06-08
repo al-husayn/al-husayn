@@ -2,6 +2,8 @@
 
 [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc19yVrMKZ9tCy40hWEc3BA?style=for-the-badge)][youtube]
 [![Twitter Follow](https://img.shields.io/twitter/follow/al_drake3?style=for-the-badge)][twitter]
+[![GitHub Follow](https://img.shields.io/github/followers/al-husayn?style=for-the-badge)][github]
+
 
 
 
@@ -104,3 +106,4 @@
 [youtube]:https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA
 [instagram]: https://instagram.com/al_drake3
 [linkedin]: https://www.linkedin.com/in/al-hussein-abubakar/
+[github]: https://github.com/al-husayn
