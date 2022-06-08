@@ -79,6 +79,7 @@
  <summary>:zap: GitHub Stats</summary>
 
   [![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=al-husayn&count_private=true&theme=cobalt2&showicons=true)]()
+  </details>
  <details>
  <summary>:zap: Language Stats</summary>
 
