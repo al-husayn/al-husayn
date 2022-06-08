@@ -7,7 +7,7 @@
 
 ## I'm a Full Stack Developer and a IT Support Specialist!!
 
-- 🔭 Check out my VS Code course: [Become A VS Code SuperHero!][course]!
+
 - 🌱 I’m currently learning everything 🤣
 - 👯 I’m looking to collaborate with other content creators
 - 🥅 2022 Goals: Learn more about web3
