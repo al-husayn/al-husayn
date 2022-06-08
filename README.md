@@ -78,7 +78,9 @@
  <details>
  <summary>:zap: GitHub Stats</summary>
 
- [![AL Drake GitHub stats](https://github-readme-stats.vercel.app/api?username=al-husayn&show_icons=true&count_private=true&theme=cobalt2)](https://github.com/al-husayn/github-readme-stats)
+ <!-- [![AL Drake GitHub stats](https://github-readme-stats.vercel.app/api?username=al-husayn&show_icons=true&count_private=true&theme=cobalt2)](https://github.com/al-husayn/github-readme-stats) -->
+ 
+ [![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=al-husayn&count_private=true&theme=tokyonight&showicons=true)]()
  </details>
 
  [![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=al-husayn&langs_count=5&theme=tokyonight)]()
