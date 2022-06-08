@@ -86,10 +86,18 @@
  [![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=al-husayn&langs_count=5&theme=cobalt2)]()
  </details>
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=al-husayn&theme=cobalt2)](https://git.io/streak-stats)
-![](https://komarev.com/ghpvc/?username=al-husayn&color=green)
+ <details>
+ <summary>:zap: Streaks</summary>
 
-[![Ashutosh's github activity graph](https://activity-graph.herokuapp.com/graph?username=al-husayn&theme=cobalt2)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=al-husayn&theme=dark)](https://git.io/streak-stats)
+
+</details>
+
+ <details>
+ <summary>:zap: Streaks</summary>
+
+[![AL Drake github activity graph](https://activity-graph.herokuapp.com/graph?username=al-husayn&theme=dracula)](https://github.com/al-husayn/github-readme-activity-graph)
+</details>
  
 
 [twitter]: https://twitter.com/al_drake3
