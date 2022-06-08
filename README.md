@@ -16,7 +16,7 @@
 
 ### Connect with me:
 
-[![website](./img)](mailto:atldrake532@gmail.com)
+[![website](./img/globe-light.svg)](mailto:atldrake532@gmail.com)
 [![website](./img/globe-dark.svg)](mailto:atldrake532@gmail.com)
 &nbsp;&nbsp;
 [![website](./img/youtube-light.svg)](https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA)
