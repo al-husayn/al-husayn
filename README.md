@@ -52,7 +52,7 @@
 
 ---
 
-### ⚙️ Project Names and Live Demos
+### ⚙️ 💡 Project Names and Live Demos
 
 
 <!-- PROJECTS:START -->
