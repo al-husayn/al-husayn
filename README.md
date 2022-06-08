@@ -75,11 +75,11 @@
 > [My latest blog post will soon be available here]
 
 ---
- <!-- <details> -->
- <!-- <summary>:zap: GitHub Stats</summary> -->
+ <details>
+ <summary>:zap: GitHub Stats</summary>
 
- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/al-husayn/github-readme-stats)
- <!-- </details> -->
+ [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=al-husayn)](https://github.com/al-husayn/github-readme-stats)
+ </details>
 
 [twitter]: https://twitter.com/al_drake3
 [youtube]:https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA
