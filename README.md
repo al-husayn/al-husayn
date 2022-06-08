@@ -58,21 +58,21 @@
 <!-- PROJECTS:START -->
 > Keep an eye on the project I'm working on collaboratively. Shall be listing some here with live demos.
 > <!-- If you have the project hosted somewhere, include the link here. -->
-> Ecommerce/Marketplace: [Marketplace](https://staging.d3o0f92tyu6euq.amplifyapp.com/)
+> eCommerce/Marketplace: [Marketplace](https://staging.d3o0f92tyu6euq.amplifyapp.com/)
 
 ---
 
 ### 📺 Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
-- [My latest YouTube videos will soon be available here]
+> [My latest YouTube videos will soon be available here]
 
 ---
 
 ### 📕 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-- [My latest blog post will soon be available here]
+> [My latest blog post will soon be available here]
 
 ---
 
