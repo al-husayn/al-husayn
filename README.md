@@ -105,7 +105,7 @@
     <summary>:zap: Trophies</summary>
 
  
- [![trophy](https://github-profile-trophy.vercel.app/?username=al-husayn&theme=cobalt2)](https://github.com/ryo-ma/github-profile-trophy)
+ [![trophy](https://github-profile-trophy.vercel.app/?username=al-husayn&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 </details>
 
 [twitter]: https://twitter.com/al_drake3
