@@ -100,7 +100,13 @@
 
 [![AL Drake github activity graph](https://activity-graph.herokuapp.com/graph?username=al-husayn&theme=dracula)](https://github.com/al-husayn/github-readme-activity-graph)
 </details>
+
+<details>
+    <summary>:zap: Trophies</summary>
+
  
+ [![trophy](https://github-profile-trophy.vercel.app/?username=al-husayn&theme=cobalt2)](https://github.com/ryo-ma/github-profile-trophy)
+</details>
 
 [twitter]: https://twitter.com/al_drake3
 [youtube]:https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA
