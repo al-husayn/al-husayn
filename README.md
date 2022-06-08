@@ -86,6 +86,7 @@
  [![My GitHub Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=al-husayn&langs_count=5&theme=cobalt2)]()
  </details>
 
+[![My GitHub Stats](https://github-readme-stats.vercel.app/api/?username=josephadeabah&count_private=true&theme=cobalt2&showicons=true)]()
  
 
 [twitter]: https://twitter.com/al_drake3
