@@ -11,7 +11,7 @@
 - 🌱 I’m currently learning everything 🤣
 - 👯 I’m looking to collaborate with other developers
 - 🥅 2022 Goals: Learn more about web3
-- ⚡ Fun fact: I love play soccer, reading and surfing the internet
+- ⚡ Fun fact: I love playing soccer, reading and surfing the internet
 
 
 ### Connect with me:
