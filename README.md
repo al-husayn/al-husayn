@@ -18,8 +18,8 @@
 
 ### Connect with me:
 
-[![website](./img/globe-light.svg)](mailto:atldrake532@gmail.com)
-[![website](./img/globe-dark.svg)](mailto:atldrake532@gmail.com)
+[![email](./img/globe-light.svg)](mailto:atldrake532@gmail.com)
+[![email](./img/globe-dark.svg)](mailto:atldrake532@gmail.com)
 &nbsp;&nbsp;
 [![youtube](./img/youtube-light.svg)](https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA)
 [![youtube](./img/youtube-dark.svg)](https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA)
@@ -108,6 +108,7 @@
  [![trophy](https://github-profile-trophy.vercel.app/?username=al-husayn&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 </details>
 
+[email]: mailto:atldrake532@gmail.com
 [twitter]: https://twitter.com/al_drake3
 [youtube]:https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA
 [instagram]: https://instagram.com/al_drake3
