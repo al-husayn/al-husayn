@@ -110,6 +110,7 @@
 
 ## 😂 Here is a random joke that'll make you laugh!
 ![Jokes Card](https://readme-jokes.vercel.app/api)
+<img src=https://komarev.com/ghpvc/?username = al-husayn/>
 
 [email]: mailto:atldrake532@gmail.com
 [twitter]: https://twitter.com/al_drake3
