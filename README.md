@@ -2,7 +2,11 @@
 
 
 [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc19yVrMKZ9tCy40hWEc3BA?style=social)][youtube]
+<<<<<<< HEAD
 [![Website]![Website](https://img.shields.io/website?color=%23008080&label=al-drake.com&up_message=UP&url=https%3A%2F%2Fal-drake.netlify.app%2F)][website]
+=======
+[![Website]![Website]([https://img.shields.io/website?label=al-drake.netlify.app&up_message=UP&url=https%3A%2F%2Fal-drake.netlify.app%2F](https://img.shields.io/website?color=%23008080&label=al-drake.com&up_message=UP&url=https%3A%2F%2Fal-drake.netlify.app%2F)](https://al-drake.netlify.app/)
+>>>>>>> 3225146e4a6d29ae3bf26c87a47b620b00d19207
 [![Twitter Follow](https://img.shields.io/twitter/follow/al_drake3?style=social)][twitter]
 [![GitHub Follow](https://img.shields.io/github/followers/al-husayn?style=social)][github]
 
