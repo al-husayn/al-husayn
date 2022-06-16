@@ -1,5 +1,8 @@
 # Hi there, I'm Al-Hussein - aka [AL Drake][youtube] 👋 
 
+### 😂 Here is a random joke that'll make you laugh 😂😂 while you explore my profile
+![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=cobalt)
+
 [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc19yVrMKZ9tCy40hWEc3BA?style=social)][youtube]
 [![Twitter Follow](https://img.shields.io/twitter/follow/al_drake3?style=social)][twitter]
 [![GitHub Follow](https://img.shields.io/github/followers/al-husayn?style=social)][github]
@@ -107,11 +110,6 @@
  
  [![trophy](https://github-profile-trophy.vercel.app/?username=al-husayn&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 </details>
-
-<br>
-
-### 😂😂😂 Here is a random joke that'll make you laugh!
-![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=cobalt)
 
 [email]: mailto:atldrake532@gmail.com
 [twitter]: https://twitter.com/al_drake3
