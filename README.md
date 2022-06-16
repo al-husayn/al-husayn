@@ -108,8 +108,6 @@
  [![trophy](https://github-profile-trophy.vercel.app/?username=al-husayn&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 </details>
 <br>
-<br>
-
 ### 😂😂😂 Here is a random joke that'll make you laugh!
 ![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=cobalt)
 
