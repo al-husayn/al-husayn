@@ -1,7 +1,5 @@
 # Hi there, I'm Al-Hussein - aka [AL Drake][youtube] 👋 
 
-### 😂 Here is a random joke that'll make you laugh 😂😂 while you explore my profile
-![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=cobalt)
 
 [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc19yVrMKZ9tCy40hWEc3BA?style=social)][youtube]
 [![Twitter Follow](https://img.shields.io/twitter/follow/al_drake3?style=social)][twitter]
