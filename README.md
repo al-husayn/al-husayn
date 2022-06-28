@@ -16,7 +16,7 @@
 - 👯 I’m looking to collaborate with other developers
 - 🥅 2022 Goals: Learn more about React, Next JS, Typescript, Node JS, PostgreSQL and Tailwind CSS
 - ⚡ Fun fact: I love playing soccer, reading and surfing the internet
-- 📫 How to reach me atldrake532@gmail.com
+- 📫 How to reach me alhusayn532@gmail.com
 
 ### Connect with me:
 
@@ -116,7 +116,7 @@
 
 
 [website]: https://al-drake.netlify.app/
-[email]: mailto:atldrake532@gmail.com
+[email]: mailto:alhusayn532@gmail.com
 [twitter]: https://twitter.com/al_drake3
 [youtube]:https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA
 [instagram]: https://instagram.com/al_drake3
