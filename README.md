@@ -66,17 +66,17 @@
 
 ---
 
-### 📺 Latest YouTube Videos
-
-<!-- YOUTUBE:START -->
-> [My latest YouTube videos will soon be available here]
-
----
-
-### 📕 Latest Blog Posts
+### 📺 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
 > [My latest blog post will soon be available here]
+
+---
+
+ ### 📕 Latest YouTube Videos
+
+<!-- YOUTUBE:START -->
+> [My latest YouTube videos will soon be available here]
 
 ---
  <details>
