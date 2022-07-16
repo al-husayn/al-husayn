@@ -114,9 +114,6 @@
 ### 😂 Here is a random joke that'll make you laugh 😂😂 while you explore my profile
 ![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=cobalt)
 
-![github contribution grid snake animation](https://raw.githubusercontent.com/al-husayn/al-husayn/output/github-contribution-grid-snake.svg)
-_generated with [Platane/snk](https://github.com/Platane/snk)_
-
 
 [website]: https://al-drake.netlify.app/
 [email]: mailto:alhusayn532@gmail.com
