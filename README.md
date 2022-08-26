@@ -65,8 +65,7 @@
 >My Portfolio Website: [Personal Portfolio site](https://al-drake.netlify.app/)
 
 > eCommerce/Marketplace: [Community Marketplace](https://marketplace.amalitech-dev.net/)
->Freelance Website: [Connecting international clients and work
-in a cross-cultural setting](https://thefairwork.com/)
+>Freelance:[Connecting international clients and work](https://thefairwork.com/)
 
 ---
 
