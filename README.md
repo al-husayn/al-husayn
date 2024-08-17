@@ -12,7 +12,7 @@
 ## I'm a Software Developer and an IT Support Specialist!!
 
 
-- 🌱 I’m currently learning everything 🤣
+- 🌱 I’m currently focusing JavaScript, Typescript, Python & C#  🤣
 - 👯 I’m looking to collaborate with other developers
 - 🥅 2023 Goals: Learn more about React, Next JS, Typescript, Node JS, PostgreSQL and Tailwind CSS
 - ⚡ Fun fact: I love playing soccer, reading and surfing the internet
