@@ -14,7 +14,7 @@
 
 - 🌱 I’m currently focusing on JavaScript, Typescript, Python & C#  🤣
 - 👯 I’m looking to collaborate with other developers
-- 🥅 2024 Goals: Learn more about React, Next JS, Typescript, Node JS, PostgreSQL and Tailwind CSS
+- 🥅 2025 Goals: Learn more about React, Next JS, Typescript, Node JS, PostgreSQL and Tailwind CSS
 - ⚡ Fun fact: I love playing soccer, reading and surfing the internet
 - 📫 How to reach me alhusayn532@gmail.com
 
