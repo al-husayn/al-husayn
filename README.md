@@ -12,9 +12,9 @@
 ## I'm a Software Developer and an IT Support Specialist!!
 
 
-- 🌱 I’m currently focusing on JavaScript, Typescript, Python & C#  🤣
+- 🌱 I’m currently focusing on JavaScript, Typescript, React, NextJS, Python & C#  🤣
 - 👯 I’m looking to collaborate with other developers
-- 🥅 2025 Goals: Learn more about React, Next JS, Typescript, Node JS, PostgreSQL and Tailwind CSS
+- 🥅 2025 Goals: Delve in deeper into blockchain development
 - ⚡ Fun fact: I love playing soccer, reading and surfing the internet
 - 📫 How to reach me alhusayn532@gmail.com
 
