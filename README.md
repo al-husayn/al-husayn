@@ -9,7 +9,7 @@
 
 
 
-## I'm a Software Developer and an IT Support Specialist!!
+## I'm a Software Developer, Aspiring Blockchain Developer and an IT Support Specialist!!
 
 
 - 🌱 I’m currently focusing on JavaScript, Typescript, React, NextJS, Python & C#  🤣
