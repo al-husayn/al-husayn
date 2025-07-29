@@ -21,7 +21,7 @@
 ### Connect with me:
 
 [![email](./img/globe-light.svg)](https://al-husayn.vercel.app/)
-[![email](./img/globe-dark.svg)](mailto:atldrake532@gmail.com)
+[![email](./img/globe-dark.svg)](https://al-husayn.vercel.app/)
 &nbsp;&nbsp;
 [![youtube](./img/youtube-light.svg)](https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA)
 [![youtube](./img/youtube-dark.svg)](https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA)
