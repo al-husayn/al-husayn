@@ -20,7 +20,7 @@
 
 ### Connect with me:
 
-[![email](./img/globe-light.svg)](mailto:atldrake532@gmail.com)
+[![email](./img/globe-light.svg)](https://al-husayn.vercel.app/)
 [![email](./img/globe-dark.svg)](mailto:atldrake532@gmail.com)
 &nbsp;&nbsp;
 [![youtube](./img/youtube-light.svg)](https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA)
