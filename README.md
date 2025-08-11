@@ -62,7 +62,7 @@
 <!-- PROJECTS:START -->
 > Keep an eye on the project I'm working on collaboratively. Shall be listing some here with live demos.
 > <!-- If you have the project hosted somewhere, include the link here. -->
->My Portfolio Website: [Personal Portfolio site](https://al-drake.netlify.app/)
+>My Portfolio Website: [Personal Portfolio site](https://al-husayn.vercel.app/)
 
 > eCommerce/Marketplace: [Community Marketplace](https://marketplace.amalitech-dev.net/)
 
