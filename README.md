@@ -1,4 +1,4 @@
-# Hi there, I'm Al-Hussein - aka [Al-Husssein][website] 👋 
+# Hi there, I'm Al-Hussein - aka [AL Drake][website] 👋 
 
 
 [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc19yVrMKZ9tCy40hWEc3BA?style=social)][youtube]
