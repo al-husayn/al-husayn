@@ -1,4 +1,4 @@
-# Hi there, I'm Al-Hussein - aka [AL Drake][website] 👋 
+# Hi there, I'm Al-Hussein - aka [Al-Husssein][website] 👋 
 
 
 [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc19yVrMKZ9tCy40hWEc3BA?style=social)][youtube]
@@ -120,7 +120,7 @@ in a cross-cultural setting](https://thefairwork.com/)
 ![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=cobalt)
 
 
-[website]: https://al-drake.netlify.app/
+[website]: https://al-husayn.vercel.app/
 [email]: mailto:alhusayn532@gmail.com
 [twitter]: https://twitter.com/al_drake3
 [youtube]:https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA
