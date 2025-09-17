@@ -20,8 +20,8 @@
 
 ### Connect with me:
 
-[![email](./img/globe-light.svg)](https://al-husayn.vercel.app/)
-[![email](./img/globe-dark.svg)](https://al-husayn.vercel.app/)
+[![email](./img/globe-light.svg)](https://www.al-husayn.dev/)
+[![email](./img/globe-dark.svg)](https://www.al-husayn.dev/)
 &nbsp;&nbsp;
 [![youtube](./img/youtube-light.svg)](https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA)
 [![youtube](./img/youtube-dark.svg)](https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA)
@@ -120,7 +120,7 @@ in a cross-cultural setting](https://thefairwork.com/)
 ![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=cobalt)
 
 
-[website]: https://al-husayn.vercel.app/
+[website]: https://www.al-husayn.dev/
 [email]: mailto:alhusayn532@gmail.com
 [twitter]: https://twitter.com/al_drake3
 [youtube]:https://www.youtube.com/channel/UCc19yVrMKZ9tCy40hWEc3BA
