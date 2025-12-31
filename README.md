@@ -14,7 +14,7 @@
 
 - 🌱 I’m currently focusing on JavaScript, Typescript, React, NextJS, Python, AI & C#  🤣
 - 👯 I’m looking to collaborate with other developers
-- 🥅 2025 Goals: Delve in deeper into blockchain development
+- 🥅 2026 Goals: Delve in deeper into blockchain development and AI
 - ⚡ Fun fact: I love playing soccer, reading and surfing the internet
 - 📫 How to reach me alhusayn532@gmail.com
 
@@ -62,7 +62,7 @@
 <!-- PROJECTS:START -->
 > Keep an eye on the project I'm working on collaboratively. Shall be listing some here with live demos.
 > <!-- If you have the project hosted somewhere, include the link here. -->
->My Portfolio Website: [Personal Portfolio site](https://al-husayn.vercel.app/)
+>My Portfolio Website: [Personal Portfolio site](https://www.al-husayn.dev/)
 
 > eCommerce/Marketplace: [Community Marketplace](https://marketplace.amalitech-dev.net/)
 
