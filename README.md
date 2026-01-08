@@ -12,7 +12,7 @@
 ## I'm a Software Developer, Aspiring Blockchain Developer and an IT Support Specialist!!
 
 
-- 🌱 I’m currently focusing on JavaScript, Typescript, React, NextJS, Python, AI & C#  🤣
+- 🌱 I’m currently focusing on JavaScript, Typescript, React, NextJS, Python, AI, Solidity & C#  🤣
 - 👯 I’m looking to collaborate with other developers
 - 🥅 2026 Goals: Delve in deeper into blockchain development and AI
 - ⚡ Fun fact: I love playing soccer, reading and surfing the internet
