@@ -18,7 +18,7 @@
 - ⚡ Fun fact: I love playing soccer, reading and surfing the internet
 - 📫 How to reach me alhusayn532@gmail.com
 
-### Connect with me:
+### Connect with me on:
 
 [![email](./img/globe-light.svg)](https://www.al-husayn.dev/)
 [![email](./img/globe-dark.svg)](https://www.al-husayn.dev/)
