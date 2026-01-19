@@ -119,6 +119,12 @@ in a cross-cultural setting](https://thefairwork.com/)
 ### 😂 Here is a random joke that'll make you laugh 😂😂 while you explore my profile
 ![Jokes Card](https://readme-jokes.vercel.app/api?hideBorder&theme=cobalt)
 
+### 🧩 Developer Card
+<a href="https://app.daily.dev/aldrake">
+  <img src="https://api.daily.dev/devcards/v2/W4CpLIwIXQQfTnip2vQ9E.png?type=default&r=hnd" width="350"/>
+</a>
+
+
 
 [website]: https://www.al-husayn.dev/
 [email]: mailto:alhusayn532@gmail.com
