@@ -121,7 +121,7 @@ in a cross-cultural setting](https://thefairwork.com/)
 
 ### 🧩 Developer Card
 <a href="https://app.daily.dev/aldrake">
-  <img src="https://api.daily.dev/devcards/v2/W4CpLIwIXQQfTnip2vQ9E.png?type=default&r=hnd" width="350"/>
+  <img src="https://api.daily.dev/devcards/v2/W4CpLIwIXQQfTnip2vQ9E.png?type=wide&r=8aj" width="652"/>
 </a>
 
 
