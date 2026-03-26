@@ -74,38 +74,112 @@ in a cross-cultural setting](https://thefairwork.com/)
 ### 📕 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-- [JavaScript Event Loop Explained](https://blog.al-husayn.dev/blog/event-loop) - March 10, 2026
-  Creator: Al-Hussein
-  Category: JavaScript
-  Description: Learn how the JavaScript event loop handles async code. Understand the call stack, task queue, microtasks, and why Promises always run before setTimeout().
-- [Scope & Closures](https://blog.al-husayn.dev/blog/scope-and-closures) - March 5, 2026
-  Creator: Al-Hussein
-  Category: JavaScript
-  Description: Learn JavaScript scope and closures. Understand the three types of scope, var vs let vs const, lexical scoping, the scope chain, and closure patterns for data privacy.
-- [Equality: == vs ===](https://blog.al-husayn.dev/blog/equality-operators) - February 24, 2026
-  Creator: Al-Hussein
-  Category: JavaScript
-  Description: Learn JavaScript equality: == vs ===, typeof quirks, and Object.is(). Understand type coercion and why NaN !== NaN.
-- [Top 5 Programming Languages to Learn in 2026](https://blog.al-husayn.dev/blog/top-5-programming-languages-2026) - February 20, 2026
-  Creator: Al-Hussein
-  Category: Programming Languages
-  Description: A curated list of the best programming languages to learn in 2026, with reasons why they matter and Hello World code examples for each.
-- [Type Coercion](https://blog.al-husayn.dev/blog/type-coercion) - September 18, 2025
-  Creator: Al-Hussein
-  Category: JavaScript
-  Description: Learn JavaScript type coercion. Understand how values convert to strings, numbers, and booleans, plus the 8 falsy values.
-- [Primitives vs Objects: How JavaScript Values Actually Work](https://blog.al-husayn.dev/blog/primitives-objects) - September 17, 2025
-  Creator: Al-Hussein
-  Category: JavaScript
-  Description: Learn how JavaScript primitives and objects differ in behavior. Understand immutability, call-by-sharing semantics, why mutation works but reassignment doesn't, and how V8 actually stores values.
-- [Primitive Types](https://blog.al-husayn.dev/blog/primitive-types) - September 11, 2025
-  Creator: Al-Hussein
-  Category: JavaScript
-  Description: Learn JavaScript’s 7 primitive types: string, number, bigint, boolean, undefined, null, and symbol. Understand immutability, typeof quirks, and autoboxing..
-- [Call Stack: How Function Execution Works](https://blog.al-husayn.dev/blog/call-stack) - September 5, 2025
-  Creator: Al-Hussein
-  Category: JavaScript
-  Description: Learn how the JavaScript call stack works. Understand stack frames, LIFO ordering, execution contexts, and stack overflow errors.
+<table>
+  <tr>
+    <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/event-loop">
+        <img src="https://blog.al-husayn.dev/thumbnails/event-loop.webp" width="120" alt="JavaScript Event Loop Explained feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/event-loop"><strong>JavaScript Event Loop Explained</strong></a><br />
+      <sub>March 10, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn how the JavaScript event loop handles async code. Understand the call stack, task queue, microtasks, and why Promises always run before setTimeout().
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/scope-and-closures">
+        <img src="https://blog.al-husayn.dev/thumbnails/scope-and-closures.png" width="120" alt="Scope &amp; Closures feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/scope-and-closures"><strong>Scope &amp; Closures</strong></a><br />
+      <sub>March 5, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn JavaScript scope and closures. Understand the three types of scope, var vs let vs const, lexical scoping, the scope chain, and closure patterns for data privacy.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/equality-operators">
+        <img src="https://blog.al-husayn.dev/thumbnails/equality-js.webp" width="120" alt="Equality: == vs === feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/equality-operators"><strong>Equality: == vs ===</strong></a><br />
+      <sub>February 24, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn JavaScript equality: == vs ===, typeof quirks, and Object.is(). Understand type coercion and why NaN !== NaN.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/top-5-programming-languages-2026">
+        <img src="https://blog.al-husayn.dev/thumbnails/top-5-languages-2025.png" width="120" alt="Top 5 Programming Languages to Learn in 2026 feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/top-5-programming-languages-2026"><strong>Top 5 Programming Languages to Learn in 2026</strong></a><br />
+      <sub>February 20, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: Programming Languages</sub><br /><br />
+      A curated list of the best programming languages to learn in 2026, with reasons why they matter and Hello World code examples for each.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/type-coercion">
+        <img src="https://blog.al-husayn.dev/thumbnails/type-coercion.webp" width="120" alt="Type Coercion feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/type-coercion"><strong>Type Coercion</strong></a><br />
+      <sub>September 18, 2025</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn JavaScript type coercion. Understand how values convert to strings, numbers, and booleans, plus the 8 falsy values.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/primitives-objects">
+        <img src="https://blog.al-husayn.dev/thumbnails/primitives-objects.webp" width="120" alt="Primitives vs Objects: How JavaScript Values Actually Work feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/primitives-objects"><strong>Primitives vs Objects: How JavaScript Values Actually Work</strong></a><br />
+      <sub>September 17, 2025</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn how JavaScript primitives and objects differ in behavior. Understand immutability, call-by-sharing semantics, why mutation works but reassignment doesn&#x27;t, and how V8 actually stores values.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/primitive-types">
+        <img src="https://blog.al-husayn.dev/thumbnails/primitive.webp" width="120" alt="Primitive Types feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/primitive-types"><strong>Primitive Types</strong></a><br />
+      <sub>September 11, 2025</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn JavaScript’s 7 primitive types: string, number, bigint, boolean, undefined, null, and symbol. Understand immutability, typeof quirks, and autoboxing..
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/call-stack">
+        <img src="https://blog.al-husayn.dev/thumbnails/call-stack.webp" width="120" alt="Call Stack: How Function Execution Works feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/call-stack"><strong>Call Stack: How Function Execution Works</strong></a><br />
+      <sub>September 5, 2025</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn how the JavaScript call stack works. Understand stack frames, LIFO ordering, execution contexts, and stack overflow errors.
+    </td>
+  </tr>
+</table>
 <!-- BLOG-POST-LIST:END -->
 
 ---

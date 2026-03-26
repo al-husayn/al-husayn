@@ -6,7 +6,7 @@ import re
 import shutil
 import subprocess
 from datetime import datetime
-from html import unescape
+from html import escape as escape_html, unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
@@ -159,9 +159,20 @@ def collect_posts(html: str) -> list[dict[str, str]]:
                 url = candidate.get("url")
                 published = candidate.get("datePublished", "")
                 description = candidate.get("description", "")
+                image = candidate.get("image", "")
 
                 if not title or not url or url in seen_urls:
                     continue
+
+                image_url = ""
+                if isinstance(image, str):
+                    image_url = image.strip()
+                elif isinstance(image, list) and image:
+                    first_image = image[0]
+                    if isinstance(first_image, str):
+                        image_url = first_image.strip()
+                elif isinstance(image, dict):
+                    image_url = str(image.get("url", "")).strip()
 
                 posts.append(
                     {
@@ -169,6 +180,7 @@ def collect_posts(html: str) -> list[dict[str, str]]:
                         "url": url.strip(),
                         "published": str(published).strip(),
                         "description": normalize_whitespace(str(description)),
+                        "image": image_url,
                     }
                 )
                 seen_urls.add(url)
@@ -201,6 +213,7 @@ def fetch_post_metadata(post_url: str) -> dict[str, str]:
         "description": first_meta_value(
             meta_values, "description", "og:description", "twitter:description"
         ),
+        "image": first_meta_value(meta_values, "og:image", "twitter:image"),
     }
 
 
@@ -213,39 +226,60 @@ def enrich_posts(posts: list[dict[str, str]]) -> list[dict[str, str]]:
         enriched_post["category"] = metadata.get("category", "")
         if metadata.get("description"):
             enriched_post["description"] = metadata["description"]
+        if metadata.get("image") and not enriched_post.get("image"):
+            enriched_post["image"] = metadata["image"]
         enriched_posts.append(enriched_post)
 
     return enriched_posts
 
 
-def build_post_block(post: dict[str, str]) -> str:
+def build_post_row(post: dict[str, str]) -> str:
     published = post.get("published")
-    date_suffix = f" - {format_date(published)}" if published else ""
+    published_text = format_date(published) if published else "No publish date"
     creator = post.get("creator") or "Al-Hussein"
     category = post.get("category") or "Uncategorized"
     description = post.get("description") or "No description available."
+    image = post.get("image")
+    image_markup = ""
+    if image:
+        image_markup = "\n".join(
+            [
+                f'      <a href="{escape_html(post["url"], quote=True)}">',
+                f'        <img src="{escape_html(image, quote=True)}" width="120" alt="{escape_html(post["title"], quote=True)} feature image" />',
+                "      </a>",
+            ]
+        )
+
     return "\n".join(
         [
-            f"- [{post['title']}]({post['url']}){date_suffix}",
-            f"  Creator: {creator}",
-            f"  Category: {category}",
-            f"  Description: {description}",
+            "  <tr>",
+            '    <td width="132" valign="top">',
+            image_markup or "      &nbsp;",
+            "    </td>",
+            '    <td valign="top">',
+            f'      <a href="{escape_html(post["url"], quote=True)}"><strong>{escape_html(post["title"])}</strong></a><br />',
+            f"      <sub>{escape_html(published_text)}</sub><br />",
+            f"      <sub>Creator: {escape_html(creator)} | Category: {escape_html(category)}</sub><br /><br />",
+            f"      {escape_html(description)}",
+            "    </td>",
+            "  </tr>",
         ]
     )
 
 
-def build_post_blocks(posts: list[dict[str, str]], limit: int) -> list[str]:
+def build_post_markup(posts: list[dict[str, str]], limit: int) -> str:
     if not posts:
         raise RuntimeError("No blog posts were found in the homepage structured data.")
 
     selected_posts = sort_posts(posts)[: max(limit, 1)]
-    return [build_post_block(post) for post in enrich_posts(selected_posts)]
+    rows = [build_post_row(post) for post in enrich_posts(selected_posts)]
+    return "\n".join(["<table>", *rows, "</table>"])
 
 
-def update_readme(readme_path: Path, post_blocks: list[str]) -> None:
+def update_readme(readme_path: Path, post_markup: str) -> None:
     readme = readme_path.read_text(encoding="utf-8")
     newline = "\r\n" if "\r\n" in readme else "\n"
-    replacement = newline.join([START_MARKER, *post_blocks, END_MARKER]).replace(
+    replacement = newline.join([START_MARKER, post_markup, END_MARKER]).replace(
         "\n", newline
     )
     pattern = re.compile(
@@ -265,9 +299,9 @@ def main() -> None:
     args = parse_args()
     readme_path = Path(args.readme_path)
     html = fetch_html(args.blog_home)
-    post_blocks = build_post_blocks(collect_posts(html), args.limit)
-    update_readme(readme_path, post_blocks)
-    print(f"Updated {readme_path} with {len(post_blocks)} post(s).")
+    post_markup = build_post_markup(collect_posts(html), args.limit)
+    update_readme(readme_path, post_markup)
+    print(f"Updated {readme_path} with up to {args.limit} post(s).")
 
 
 if __name__ == "__main__":
