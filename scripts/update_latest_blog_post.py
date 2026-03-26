@@ -13,6 +13,7 @@ from urllib.request import Request, urlopen
 START_MARKER = "<!-- BLOG-POST-LIST:START -->"
 END_MARKER = "<!-- BLOG-POST-LIST:END -->"
 USER_AGENT = "al-husayn-readme-updater/1.0"
+DEFAULT_POST_LIMIT = 9
 
 
 def parse_args() -> argparse.Namespace:
@@ -28,6 +29,12 @@ def parse_args() -> argparse.Namespace:
         "--readme-path",
         default="README.md",
         help="Path to the profile README.",
+    )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=DEFAULT_POST_LIMIT,
+        help="Number of recent posts to include in the README.",
     )
     return parser.parse_args()
 
@@ -130,20 +137,27 @@ def format_date(raw_date: str) -> str:
     return f"{parsed.strftime('%B')} {parsed.day}, {parsed.year}"
 
 
-def build_latest_post_line(posts: list[dict[str, str]]) -> str:
+def sort_posts(posts: list[dict[str, str]]) -> list[dict[str, str]]:
+    return sorted(posts, key=lambda post: post.get("published", ""), reverse=True)
+
+
+def build_post_lines(posts: list[dict[str, str]], limit: int) -> list[str]:
     if not posts:
         raise RuntimeError("No blog posts were found in the homepage structured data.")
 
-    latest_post = max(posts, key=lambda post: post.get("published", ""))
-    published = latest_post.get("published")
-    suffix = f" - {format_date(published)}" if published else ""
-    return f"- [{latest_post['title']}]({latest_post['url']}){suffix}"
+    lines: list[str] = []
+    for post in sort_posts(posts)[: max(limit, 1)]:
+        published = post.get("published")
+        suffix = f" - {format_date(published)}" if published else ""
+        lines.append(f"- [{post['title']}]({post['url']}){suffix}")
+
+    return lines
 
 
-def update_readme(readme_path: Path, latest_post_line: str) -> None:
+def update_readme(readme_path: Path, post_lines: list[str]) -> None:
     readme = readme_path.read_text(encoding="utf-8")
     newline = "\r\n" if "\r\n" in readme else "\n"
-    replacement = newline.join([START_MARKER, latest_post_line, END_MARKER])
+    replacement = newline.join([START_MARKER, *post_lines, END_MARKER])
     pattern = re.compile(
         rf"{re.escape(START_MARKER)}.*?{re.escape(END_MARKER)}",
         flags=re.DOTALL,
@@ -161,9 +175,9 @@ def main() -> None:
     args = parse_args()
     readme_path = Path(args.readme_path)
     html = fetch_html(args.blog_home)
-    latest_post_line = build_latest_post_line(collect_posts(html))
-    update_readme(readme_path, latest_post_line)
-    print(f"Updated {readme_path} with: {latest_post_line}")
+    post_lines = build_post_lines(collect_posts(html), args.limit)
+    update_readme(readme_path, post_lines)
+    print(f"Updated {readme_path} with {len(post_lines)} post(s).")
 
 
 if __name__ == "__main__":

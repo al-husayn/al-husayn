@@ -71,10 +71,17 @@ in a cross-cultural setting](https://thefairwork.com/)
 
 ---
 
-### 📕 Latest Blog Post
+### 📕 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
 - [JavaScript Event Loop Explained](https://blog.al-husayn.dev/blog/event-loop) - March 10, 2026
+- [Scope & Closures](https://blog.al-husayn.dev/blog/scope-and-closures) - March 5, 2026
+- [Equality: == vs ===](https://blog.al-husayn.dev/blog/equality-operators) - February 24, 2026
+- [Top 5 Programming Languages to Learn in 2026](https://blog.al-husayn.dev/blog/top-5-programming-languages-2026) - February 20, 2026
+- [Type Coercion](https://blog.al-husayn.dev/blog/type-coercion) - September 18, 2025
+- [Primitives vs Objects: How JavaScript Values Actually Work](https://blog.al-husayn.dev/blog/primitives-objects) - September 17, 2025
+- [Primitive Types](https://blog.al-husayn.dev/blog/primitive-types) - September 11, 2025
+- [Call Stack: How Function Execution Works](https://blog.al-husayn.dev/blog/call-stack) - September 5, 2025
 <!-- BLOG-POST-LIST:END -->
 
 ---

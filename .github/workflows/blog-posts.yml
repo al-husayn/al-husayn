@@ -20,8 +20,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Update README with the latest blog post
-        run: python scripts/update_latest_blog_post.py
+      - name: Update README with the latest blog posts
+        run: python scripts/update_latest_blog_post.py --limit 9
 
       - name: Commit README changes
         run: |
