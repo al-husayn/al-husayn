@@ -75,13 +75,37 @@ in a cross-cultural setting](https://thefairwork.com/)
 
 <!-- BLOG-POST-LIST:START -->
 - [JavaScript Event Loop Explained](https://blog.al-husayn.dev/blog/event-loop) - March 10, 2026
+  Creator: Al-Hussein
+  Category: JavaScript
+  Description: Learn how the JavaScript event loop handles async code. Understand the call stack, task queue, microtasks, and why Promises always run before setTimeout().
 - [Scope & Closures](https://blog.al-husayn.dev/blog/scope-and-closures) - March 5, 2026
+  Creator: Al-Hussein
+  Category: JavaScript
+  Description: Learn JavaScript scope and closures. Understand the three types of scope, var vs let vs const, lexical scoping, the scope chain, and closure patterns for data privacy.
 - [Equality: == vs ===](https://blog.al-husayn.dev/blog/equality-operators) - February 24, 2026
+  Creator: Al-Hussein
+  Category: JavaScript
+  Description: Learn JavaScript equality: == vs ===, typeof quirks, and Object.is(). Understand type coercion and why NaN !== NaN.
 - [Top 5 Programming Languages to Learn in 2026](https://blog.al-husayn.dev/blog/top-5-programming-languages-2026) - February 20, 2026
+  Creator: Al-Hussein
+  Category: Programming Languages
+  Description: A curated list of the best programming languages to learn in 2026, with reasons why they matter and Hello World code examples for each.
 - [Type Coercion](https://blog.al-husayn.dev/blog/type-coercion) - September 18, 2025
+  Creator: Al-Hussein
+  Category: JavaScript
+  Description: Learn JavaScript type coercion. Understand how values convert to strings, numbers, and booleans, plus the 8 falsy values.
 - [Primitives vs Objects: How JavaScript Values Actually Work](https://blog.al-husayn.dev/blog/primitives-objects) - September 17, 2025
+  Creator: Al-Hussein
+  Category: JavaScript
+  Description: Learn how JavaScript primitives and objects differ in behavior. Understand immutability, call-by-sharing semantics, why mutation works but reassignment doesn't, and how V8 actually stores values.
 - [Primitive Types](https://blog.al-husayn.dev/blog/primitive-types) - September 11, 2025
+  Creator: Al-Hussein
+  Category: JavaScript
+  Description: Learn JavaScript’s 7 primitive types: string, number, bigint, boolean, undefined, null, and symbol. Understand immutability, typeof quirks, and autoboxing..
 - [Call Stack: How Function Execution Works](https://blog.al-husayn.dev/blog/call-stack) - September 5, 2025
+  Creator: Al-Hussein
+  Category: JavaScript
+  Description: Learn how the JavaScript call stack works. Understand stack frames, LIFO ordering, execution contexts, and stack overflow errors.
 <!-- BLOG-POST-LIST:END -->
 
 ---

@@ -6,6 +6,8 @@ import re
 import shutil
 import subprocess
 from datetime import datetime
+from html import unescape
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 from urllib.request import Request, urlopen
@@ -95,6 +97,46 @@ def walk(node: Any) -> list[dict[str, Any]]:
     return []
 
 
+class MetaTagParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.meta_values: dict[str, list[str]] = {}
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() != "meta":
+            return
+
+        attr_map = {name.lower(): value for name, value in attrs if value is not None}
+        content = attr_map.get("content")
+        if not content:
+            return
+
+        for key_name in ("name", "property"):
+            key = attr_map.get(key_name)
+            if key:
+                self.meta_values.setdefault(key, []).append(content)
+
+
+def parse_meta_values(html: str) -> dict[str, list[str]]:
+    parser = MetaTagParser()
+    parser.feed(html)
+    return parser.meta_values
+
+
+def normalize_whitespace(value: str) -> str:
+    return re.sub(r"\s+", " ", unescape(value)).strip()
+
+
+def first_meta_value(meta_values: dict[str, list[str]], *keys: str) -> str:
+    for key in keys:
+        values = meta_values.get(key, [])
+        for value in values:
+            cleaned = normalize_whitespace(value)
+            if cleaned:
+                return cleaned
+    return ""
+
+
 def collect_posts(html: str) -> list[dict[str, str]]:
     posts: list[dict[str, str]] = []
     seen_urls: set[str] = set()
@@ -116,15 +158,17 @@ def collect_posts(html: str) -> list[dict[str, str]]:
                 title = candidate.get("headline")
                 url = candidate.get("url")
                 published = candidate.get("datePublished", "")
+                description = candidate.get("description", "")
 
                 if not title or not url or url in seen_urls:
                     continue
 
                 posts.append(
                     {
-                        "title": title.strip(),
+                        "title": normalize_whitespace(title),
                         "url": url.strip(),
                         "published": str(published).strip(),
+                        "description": normalize_whitespace(str(description)),
                     }
                 )
                 seen_urls.add(url)
@@ -141,23 +185,69 @@ def sort_posts(posts: list[dict[str, str]]) -> list[dict[str, str]]:
     return sorted(posts, key=lambda post: post.get("published", ""), reverse=True)
 
 
-def build_post_lines(posts: list[dict[str, str]], limit: int) -> list[str]:
+def fetch_post_metadata(post_url: str) -> dict[str, str]:
+    try:
+        meta_values = parse_meta_values(fetch_html(post_url))
+    except Exception:
+        return {}
+
+    return {
+        "creator": first_meta_value(
+            meta_values, "article:author", "author", "creator"
+        ),
+        "category": first_meta_value(
+            meta_values, "article:section", "article:tag", "category"
+        ),
+        "description": first_meta_value(
+            meta_values, "description", "og:description", "twitter:description"
+        ),
+    }
+
+
+def enrich_posts(posts: list[dict[str, str]]) -> list[dict[str, str]]:
+    enriched_posts: list[dict[str, str]] = []
+    for post in posts:
+        metadata = fetch_post_metadata(post["url"])
+        enriched_post = dict(post)
+        enriched_post["creator"] = metadata.get("creator", "")
+        enriched_post["category"] = metadata.get("category", "")
+        if metadata.get("description"):
+            enriched_post["description"] = metadata["description"]
+        enriched_posts.append(enriched_post)
+
+    return enriched_posts
+
+
+def build_post_block(post: dict[str, str]) -> str:
+    published = post.get("published")
+    date_suffix = f" - {format_date(published)}" if published else ""
+    creator = post.get("creator") or "Al-Hussein"
+    category = post.get("category") or "Uncategorized"
+    description = post.get("description") or "No description available."
+    return "\n".join(
+        [
+            f"- [{post['title']}]({post['url']}){date_suffix}",
+            f"  Creator: {creator}",
+            f"  Category: {category}",
+            f"  Description: {description}",
+        ]
+    )
+
+
+def build_post_blocks(posts: list[dict[str, str]], limit: int) -> list[str]:
     if not posts:
         raise RuntimeError("No blog posts were found in the homepage structured data.")
 
-    lines: list[str] = []
-    for post in sort_posts(posts)[: max(limit, 1)]:
-        published = post.get("published")
-        suffix = f" - {format_date(published)}" if published else ""
-        lines.append(f"- [{post['title']}]({post['url']}){suffix}")
-
-    return lines
+    selected_posts = sort_posts(posts)[: max(limit, 1)]
+    return [build_post_block(post) for post in enrich_posts(selected_posts)]
 
 
-def update_readme(readme_path: Path, post_lines: list[str]) -> None:
+def update_readme(readme_path: Path, post_blocks: list[str]) -> None:
     readme = readme_path.read_text(encoding="utf-8")
     newline = "\r\n" if "\r\n" in readme else "\n"
-    replacement = newline.join([START_MARKER, *post_lines, END_MARKER])
+    replacement = newline.join([START_MARKER, *post_blocks, END_MARKER]).replace(
+        "\n", newline
+    )
     pattern = re.compile(
         rf"{re.escape(START_MARKER)}.*?{re.escape(END_MARKER)}",
         flags=re.DOTALL,
@@ -175,9 +265,9 @@ def main() -> None:
     args = parse_args()
     readme_path = Path(args.readme_path)
     html = fetch_html(args.blog_home)
-    post_lines = build_post_lines(collect_posts(html), args.limit)
-    update_readme(readme_path, post_lines)
-    print(f"Updated {readme_path} with {len(post_lines)} post(s).")
+    post_blocks = build_post_blocks(collect_posts(html), args.limit)
+    update_readme(readme_path, post_blocks)
+    print(f"Updated {readme_path} with {len(post_blocks)} post(s).")
 
 
 if __name__ == "__main__":
