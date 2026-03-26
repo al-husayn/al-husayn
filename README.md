@@ -71,10 +71,10 @@ in a cross-cultural setting](https://thefairwork.com/)
 
 ---
 
-### 📕 Latest Blog Posts
+### 📕 Latest Blog Post
 
 <!-- BLOG-POST-LIST:START -->
-- [Loading latest post...](https://blog.al-husayn.dev)
+- [JavaScript Event Loop Explained](https://blog.al-husayn.dev/blog/event-loop) - March 10, 2026
 <!-- BLOG-POST-LIST:END -->
 
 ---
