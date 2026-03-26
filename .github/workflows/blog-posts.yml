@@ -1,9 +1,13 @@
-name: Update latest blog post
+name: Update latest blog posts
 
 on:
   schedule:
-    - cron: "0 7 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
+
+concurrency:
+  group: update-profile-blog-posts
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -11,6 +15,7 @@ permissions:
 jobs:
   update-readme-with-blog:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout profile repo
         uses: actions/checkout@v4
