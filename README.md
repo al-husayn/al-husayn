@@ -74,7 +74,8 @@ in a cross-cultural setting](https://thefairwork.com/)
 ### 📕 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-> [My latest blog post will soon be available here]
+- [Loading latest post...](https://blog.al-husayn.dev)
+<!-- BLOG-POST-LIST:END -->
 
 ---
 
