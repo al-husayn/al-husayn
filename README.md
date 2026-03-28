@@ -77,6 +77,19 @@ in a cross-cultural setting](https://thefairwork.com/)
 <table>
   <tr>
     <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/iife-modules">
+        <img src="https://blog.al-husayn.dev/thumbnails/iife.png" width="120" alt="IIFE, Modules &amp; Namespaces: Structuring Code feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/iife-modules"><strong>IIFE, Modules &amp; Namespaces: Structuring Code</strong></a><br />
+      <sub>March 28, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn how to organize JavaScript code with IIFEs, namespaces, and ES6 modules. Understand private scope, exports, dynamic imports, and common module mistakes.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
       <a href="https://blog.al-husayn.dev/blog/event-loop">
         <img src="https://blog.al-husayn.dev/thumbnails/event-loop.webp" width="120" alt="JavaScript Event Loop Explained feature image" />
       </a>
