@@ -77,6 +77,32 @@ in a cross-cultural setting](https://thefairwork.com/)
 <table>
   <tr>
     <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/recursion">
+        <img src="https://blog.al-husayn.dev/thumbnails/recursion.jpg" width="120" alt="Recursion: Functions That Call Themselves feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/recursion"><strong>Recursion: Functions That Call Themselves</strong></a><br />
+      <sub>April 17, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn recursion in JavaScript. Understand base cases, recursive calls, the call stack, and patterns like factorial, tree traversal, and memoization.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/javascript-engines">
+        <img src="https://blog.al-husayn.dev/thumbnails/js-engine.png" width="120" alt="JavaScript Engines: How V8 Runs Your Code feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/javascript-engines"><strong>JavaScript Engines: How V8 Runs Your Code</strong></a><br />
+      <sub>April 16, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn how JavaScript engines work. Understand V8&#x27;s parsing, JIT compilation, hidden classes, inline caching, and garbage collection.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
       <a href="https://blog.al-husayn.dev/blog/iife-modules">
         <img src="https://blog.al-husayn.dev/thumbnails/iife.png" width="120" alt="IIFE, Modules &amp; Namespaces: Structuring Code feature image" />
       </a>
@@ -164,32 +190,6 @@ in a cross-cultural setting](https://thefairwork.com/)
       <sub>September 17, 2025</sub><br />
       <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
       Learn how JavaScript primitives and objects differ in behavior. Understand immutability, call-by-sharing semantics, why mutation works but reassignment doesn&#x27;t, and how V8 actually stores values.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/primitive-types">
-        <img src="https://blog.al-husayn.dev/thumbnails/primitive.webp" width="120" alt="Primitive Types feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/primitive-types"><strong>Primitive Types</strong></a><br />
-      <sub>September 11, 2025</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn JavaScript’s 7 primitive types: string, number, bigint, boolean, undefined, null, and symbol. Understand immutability, typeof quirks, and autoboxing..
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/call-stack">
-        <img src="https://blog.al-husayn.dev/thumbnails/call-stack.webp" width="120" alt="Call Stack: How Function Execution Works feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/call-stack"><strong>Call Stack: How Function Execution Works</strong></a><br />
-      <sub>September 5, 2025</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn how the JavaScript call stack works. Understand stack frames, LIFO ordering, execution contexts, and stack overflow errors.
     </td>
   </tr>
 </table>
