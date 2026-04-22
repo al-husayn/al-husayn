@@ -162,32 +162,6 @@ in a cross-cultural setting](https://thefairwork.com/)
       Welcome to our video on the top 5 best programming languages to learn in 2023! In this video, I will discuss the most in-demand and versatile programming languages that...
     </td>
   </tr>
-  <tr>
-    <td width="172" valign="top">
-      <a href="https://www.youtube.com/shorts/y101kphxNI8">
-        <img src="https://i2.ytimg.com/vi/y101kphxNI8/hqdefault.jpg" width="160" alt="How to Remove Activate Windows Watermark on Your PC or Laptop. thumbnail" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://www.youtube.com/shorts/y101kphxNI8"><strong>How to Remove Activate Windows Watermark on Your PC or Laptop.</strong></a><br />
-      <sub>January 10, 2022</sub><br />
-      <sub>Channel: AL&#x27;s Dev Space</sub><br /><br />
-      How to Remove Activate Windows Watermark in your PC or laptop
-    </td>
-  </tr>
-  <tr>
-    <td width="172" valign="top">
-      <a href="https://www.youtube.com/watch?v=use63RfXX20">
-        <img src="https://i2.ytimg.com/vi/use63RfXX20/hqdefault.jpg" width="160" alt="Best Programmers Romance and Amazing pick up lines in 2022. thumbnail" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://www.youtube.com/watch?v=use63RfXX20"><strong>Best Programmers Romance and Amazing pick up lines in 2022.</strong></a><br />
-      <sub>January 3, 2022</sub><br />
-      <sub>Channel: AL&#x27;s Dev Space</sub><br /><br />
-      Best Programmers Romance with Amazing pick up lines 2022.
-    </td>
-  </tr>
 </table>
 <!-- YOUTUBE:END -->
 
