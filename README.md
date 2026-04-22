@@ -140,58 +140,6 @@ in a cross-cultural setting](https://thefairwork.com/)
       Learn JavaScript scope and closures. Understand the three types of scope, var vs let vs const, lexical scoping, the scope chain, and closure patterns for data privacy.
     </td>
   </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/equality-operators">
-        <img src="https://blog.al-husayn.dev/thumbnails/equality-js.webp" width="120" alt="Equality: == vs === feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/equality-operators"><strong>Equality: == vs ===</strong></a><br />
-      <sub>February 24, 2026</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn JavaScript equality: == vs ===, typeof quirks, and Object.is(). Understand type coercion and why NaN !== NaN.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/top-5-programming-languages-2026">
-        <img src="https://blog.al-husayn.dev/thumbnails/top-5-languages-2025.png" width="120" alt="Top 5 Programming Languages to Learn in 2026 feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/top-5-programming-languages-2026"><strong>Top 5 Programming Languages to Learn in 2026</strong></a><br />
-      <sub>February 20, 2026</sub><br />
-      <sub>Creator: Al-Hussein | Category: Programming Languages</sub><br /><br />
-      A curated list of the best programming languages to learn in 2026, with reasons why they matter and Hello World code examples for each.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/type-coercion">
-        <img src="https://blog.al-husayn.dev/thumbnails/type-coercion.webp" width="120" alt="Type Coercion feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/type-coercion"><strong>Type Coercion</strong></a><br />
-      <sub>September 18, 2025</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn JavaScript type coercion. Understand how values convert to strings, numbers, and booleans, plus the 8 falsy values.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/primitives-objects">
-        <img src="https://blog.al-husayn.dev/thumbnails/primitives-objects.webp" width="120" alt="Primitives vs Objects: How JavaScript Values Actually Work feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/primitives-objects"><strong>Primitives vs Objects: How JavaScript Values Actually Work</strong></a><br />
-      <sub>September 17, 2025</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn how JavaScript primitives and objects differ in behavior. Understand immutability, call-by-sharing semantics, why mutation works but reassignment doesn&#x27;t, and how V8 actually stores values.
-    </td>
-  </tr>
 </table>
 <!-- BLOG-POST-LIST:END -->
 
@@ -200,7 +148,48 @@ in a cross-cultural setting](https://thefairwork.com/)
  ### 📺 Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
-> [My latest YouTube videos will soon be available here]
+<table>
+  <tr>
+    <td width="172" valign="top">
+      <a href="https://www.youtube.com/watch?v=cBVbvM2PH8c">
+        <img src="https://i4.ytimg.com/vi/cBVbvM2PH8c/hqdefault.jpg" width="160" alt="Top 5 Best Programming Languages to Learn in 2023 thumbnail" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://www.youtube.com/watch?v=cBVbvM2PH8c"><strong>Top 5 Best Programming Languages to Learn in 2023</strong></a><br />
+      <sub>January 7, 2023</sub><br />
+      <sub>Channel: AL&#x27;s Dev Space</sub><br /><br />
+      Welcome to our video on the top 5 best programming languages to learn in 2023! In this video, I will discuss the most in-demand and versatile programming languages that...
+    </td>
+  </tr>
+  <tr>
+    <td width="172" valign="top">
+      <a href="https://www.youtube.com/shorts/y101kphxNI8">
+        <img src="https://i2.ytimg.com/vi/y101kphxNI8/hqdefault.jpg" width="160" alt="How to Remove Activate Windows Watermark on Your PC or Laptop. thumbnail" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://www.youtube.com/shorts/y101kphxNI8"><strong>How to Remove Activate Windows Watermark on Your PC or Laptop.</strong></a><br />
+      <sub>January 10, 2022</sub><br />
+      <sub>Channel: AL&#x27;s Dev Space</sub><br /><br />
+      How to Remove Activate Windows Watermark in your PC or laptop
+    </td>
+  </tr>
+  <tr>
+    <td width="172" valign="top">
+      <a href="https://www.youtube.com/watch?v=use63RfXX20">
+        <img src="https://i2.ytimg.com/vi/use63RfXX20/hqdefault.jpg" width="160" alt="Best Programmers Romance and Amazing pick up lines in 2022. thumbnail" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://www.youtube.com/watch?v=use63RfXX20"><strong>Best Programmers Romance and Amazing pick up lines in 2022.</strong></a><br />
+      <sub>January 3, 2022</sub><br />
+      <sub>Channel: AL&#x27;s Dev Space</sub><br /><br />
+      Best Programmers Romance with Amazing pick up lines 2022.
+    </td>
+  </tr>
+</table>
+<!-- YOUTUBE:END -->
 
 ---
  <details>

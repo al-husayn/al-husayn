@@ -11,16 +11,31 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 from urllib.request import Request, urlopen
+from xml.etree import ElementTree
 
-START_MARKER = "<!-- BLOG-POST-LIST:START -->"
-END_MARKER = "<!-- BLOG-POST-LIST:END -->"
+BLOG_START_MARKER = "<!-- BLOG-POST-LIST:START -->"
+BLOG_END_MARKER = "<!-- BLOG-POST-LIST:END -->"
+YOUTUBE_START_MARKER = "<!-- YOUTUBE:START -->"
+YOUTUBE_END_MARKER = "<!-- YOUTUBE:END -->"
 USER_AGENT = "al-husayn-readme-updater/1.0"
 DEFAULT_POST_LIMIT = 5
+DEFAULT_VIDEO_LIMIT = 1
+DEFAULT_YOUTUBE_CHANNEL_ID = "UCc19yVrMKZ9tCy40hWEc3BA"
+ATOM_NS = "http://www.w3.org/2005/Atom"
+MEDIA_NS = "http://search.yahoo.com/mrss/"
+YOUTUBE_NS = "http://www.youtube.com/xml/schemas/2015"
+XML_NAMESPACES = {
+    "atom": ATOM_NS,
+    "media": MEDIA_NS,
+    "yt": YOUTUBE_NS,
+}
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Update the README with the latest post from the blog homepage."
+        description=(
+            "Update the README with the latest blog posts and YouTube videos."
+        )
     )
     parser.add_argument(
         "--blog-home",
@@ -36,12 +51,26 @@ def parse_args() -> argparse.Namespace:
         "--limit",
         type=int,
         default=DEFAULT_POST_LIMIT,
-        help="Number of recent posts to include in the README.",
+        help="Number of recent blog posts to include in the README.",
+    )
+    parser.add_argument(
+        "--youtube-feed",
+        default=(
+            "https://www.youtube.com/feeds/videos.xml"
+            f"?channel_id={DEFAULT_YOUTUBE_CHANNEL_ID}"
+        ),
+        help="YouTube channel Atom feed URL.",
+    )
+    parser.add_argument(
+        "--youtube-limit",
+        type=int,
+        default=DEFAULT_VIDEO_LIMIT,
+        help="Number of recent videos to include in the README.",
     )
     return parser.parse_args()
 
 
-def fetch_html(url: str) -> str:
+def fetch_text(url: str) -> str:
     curl = shutil.which("curl") or shutil.which("curl.exe")
     if curl:
         result = subprocess.run(
@@ -188,18 +217,91 @@ def collect_posts(html: str) -> list[dict[str, str]]:
     return posts
 
 
+def collect_videos(feed_xml: str) -> list[dict[str, str]]:
+    try:
+        root = ElementTree.fromstring(feed_xml)
+    except ElementTree.ParseError as exc:
+        raise RuntimeError("Unable to parse the YouTube feed XML.") from exc
+
+    channel_title = normalize_whitespace(
+        root.findtext("atom:title", default="", namespaces=XML_NAMESPACES) or ""
+    )
+    videos: list[dict[str, str]] = []
+    seen_urls: set[str] = set()
+
+    for entry in root.findall("atom:entry", XML_NAMESPACES):
+        title = normalize_whitespace(
+            entry.findtext("atom:title", default="", namespaces=XML_NAMESPACES) or ""
+        )
+        published = (
+            entry.findtext("atom:published", default="", namespaces=XML_NAMESPACES) or ""
+        ).strip()
+        video_id = (
+            entry.findtext("yt:videoId", default="", namespaces=XML_NAMESPACES) or ""
+        ).strip()
+        url = ""
+        description = ""
+        thumbnail_url = ""
+        author = normalize_whitespace(
+            entry.findtext(
+                "atom:author/atom:name",
+                default=channel_title,
+                namespaces=XML_NAMESPACES,
+            )
+            or channel_title
+        )
+
+        link = entry.find("atom:link[@rel='alternate']", XML_NAMESPACES)
+        if link is None:
+            link = entry.find("atom:link", XML_NAMESPACES)
+        if link is not None:
+            url = (link.get("href") or "").strip()
+
+        media_group = entry.find("media:group", XML_NAMESPACES)
+        if media_group is not None:
+            description = normalize_whitespace(
+                media_group.findtext(
+                    "media:description", default="", namespaces=XML_NAMESPACES
+                )
+                or ""
+            )
+            thumbnail = media_group.find("media:thumbnail", XML_NAMESPACES)
+            if thumbnail is not None:
+                thumbnail_url = (thumbnail.get("url") or "").strip()
+
+        if not thumbnail_url and video_id:
+            thumbnail_url = f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg"
+
+        if not title or not url or url in seen_urls:
+            continue
+
+        videos.append(
+            {
+                "title": title,
+                "url": url,
+                "published": published,
+                "description": description,
+                "thumbnail": thumbnail_url,
+                "channel": author,
+            }
+        )
+        seen_urls.add(url)
+
+    return videos
+
+
 def format_date(raw_date: str) -> str:
     parsed = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
     return f"{parsed.strftime('%B')} {parsed.day}, {parsed.year}"
 
 
-def sort_posts(posts: list[dict[str, str]]) -> list[dict[str, str]]:
-    return sorted(posts, key=lambda post: post.get("published", ""), reverse=True)
+def sort_items(items: list[dict[str, str]]) -> list[dict[str, str]]:
+    return sorted(items, key=lambda item: item.get("published", ""), reverse=True)
 
 
 def fetch_post_metadata(post_url: str) -> dict[str, str]:
     try:
-        meta_values = parse_meta_values(fetch_html(post_url))
+        meta_values = parse_meta_values(fetch_text(post_url))
     except Exception:
         return {}
 
@@ -271,26 +373,104 @@ def build_post_markup(posts: list[dict[str, str]], limit: int) -> str:
     if not posts:
         raise RuntimeError("No blog posts were found in the homepage structured data.")
 
-    selected_posts = sort_posts(posts)[: max(limit, 1)]
+    selected_posts = sort_items(posts)[: max(limit, 1)]
     rows = [build_post_row(post) for post in enrich_posts(selected_posts)]
     return "\n".join(["<table>", *rows, "</table>"])
 
 
-def update_readme(readme_path: Path, post_markup: str) -> None:
-    readme = readme_path.read_text(encoding="utf-8")
-    newline = "\r\n" if "\r\n" in readme else "\n"
-    replacement = newline.join([START_MARKER, post_markup, END_MARKER]).replace(
+def truncate_text(value: str, limit: int) -> str:
+    normalized = normalize_whitespace(value)
+    if len(normalized) <= limit:
+        return normalized
+    shortened = normalized[:limit].rsplit(" ", 1)[0].strip()
+    return (shortened or normalized[:limit]).rstrip(".,;:") + "..."
+
+
+def build_video_row(video: dict[str, str]) -> str:
+    published = video.get("published")
+    published_text = format_date(published) if published else "No publish date"
+    description = truncate_text(
+        video.get("description") or "Watch the latest upload on YouTube.",
+        170,
+    )
+    channel = video.get("channel") or "AL Drake"
+    thumbnail = video.get("thumbnail")
+    thumbnail_markup = ""
+    if thumbnail:
+        thumbnail_markup = "\n".join(
+            [
+                f'      <a href="{escape_html(video["url"], quote=True)}">',
+                f'        <img src="{escape_html(thumbnail, quote=True)}" width="160" alt="{escape_html(video["title"], quote=True)} thumbnail" />',
+                "      </a>",
+            ]
+        )
+
+    return "\n".join(
+        [
+            "  <tr>",
+            '    <td width="172" valign="top">',
+            thumbnail_markup or "      &nbsp;",
+            "    </td>",
+            '    <td valign="top">',
+            f'      <a href="{escape_html(video["url"], quote=True)}"><strong>{escape_html(video["title"])}</strong></a><br />',
+            f"      <sub>{escape_html(published_text)}</sub><br />",
+            f"      <sub>Channel: {escape_html(channel)}</sub><br /><br />",
+            f"      {escape_html(description)}",
+            "    </td>",
+            "  </tr>",
+        ]
+    )
+
+
+def build_video_markup(videos: list[dict[str, str]], limit: int) -> str:
+    if not videos:
+        raise RuntimeError("No YouTube videos were found in the channel feed.")
+
+    selected_videos = sort_items(videos)[: max(limit, 1)]
+    rows = [build_video_row(video) for video in selected_videos]
+    return "\n".join(["<table>", *rows, "</table>"])
+
+
+def replace_marked_section(
+    readme: str,
+    *,
+    start_marker: str,
+    end_marker: str,
+    content: str,
+    newline: str,
+) -> str:
+    replacement = newline.join([start_marker, content, end_marker]).replace(
         "\n", newline
     )
     pattern = re.compile(
-        rf"{re.escape(START_MARKER)}.*?{re.escape(END_MARKER)}",
+        rf"{re.escape(start_marker)}.*?{re.escape(end_marker)}",
         flags=re.DOTALL,
     )
 
     if not pattern.search(readme):
-        raise RuntimeError("README blog markers were not found.")
+        raise RuntimeError(f"README markers were not found for section {start_marker}.")
 
-    updated_readme = pattern.sub(replacement, readme, count=1)
+    return pattern.sub(replacement, readme, count=1)
+
+
+def update_readme(readme_path: Path, post_markup: str, video_markup: str) -> None:
+    readme = readme_path.read_text(encoding="utf-8")
+    newline = "\r\n" if "\r\n" in readme else "\n"
+    updated_readme = replace_marked_section(
+        readme,
+        start_marker=BLOG_START_MARKER,
+        end_marker=BLOG_END_MARKER,
+        content=post_markup,
+        newline=newline,
+    )
+    updated_readme = replace_marked_section(
+        updated_readme,
+        start_marker=YOUTUBE_START_MARKER,
+        end_marker=YOUTUBE_END_MARKER,
+        content=video_markup,
+        newline=newline,
+    )
+
     if updated_readme != readme:
         readme_path.write_text(updated_readme, encoding="utf-8")
 
@@ -298,10 +478,15 @@ def update_readme(readme_path: Path, post_markup: str) -> None:
 def main() -> None:
     args = parse_args()
     readme_path = Path(args.readme_path)
-    html = fetch_html(args.blog_home)
+    html = fetch_text(args.blog_home)
+    youtube_feed_xml = fetch_text(args.youtube_feed)
     post_markup = build_post_markup(collect_posts(html), args.limit)
-    update_readme(readme_path, post_markup)
-    print(f"Updated {readme_path} with up to {args.limit} post(s).")
+    video_markup = build_video_markup(collect_videos(youtube_feed_xml), args.youtube_limit)
+    update_readme(readme_path, post_markup, video_markup)
+    print(
+        f"Updated {readme_path} with up to {args.limit} blog post(s) "
+        f"and {args.youtube_limit} YouTube video(s)."
+    )
 
 
 if __name__ == "__main__":
