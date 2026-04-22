@@ -15,7 +15,7 @@ from urllib.request import Request, urlopen
 START_MARKER = "<!-- BLOG-POST-LIST:START -->"
 END_MARKER = "<!-- BLOG-POST-LIST:END -->"
 USER_AGENT = "al-husayn-readme-updater/1.0"
-DEFAULT_POST_LIMIT = 9
+DEFAULT_POST_LIMIT = 5
 
 
 def parse_args() -> argparse.Namespace:
