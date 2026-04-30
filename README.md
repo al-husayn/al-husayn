@@ -1,10 +1,10 @@
 # Hi there, I'm Al-Hussein - aka [AL Drake][website] 👋 
 
 
-[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCc19yVrMKZ9tCy40hWEc3BA?style=social)][youtube]
-[![Website](https://img.shields.io/website?color=%23008080&label=al-drake.com&up_message=UP&url=https%3A%2F%2Fal-drake.netlify.app%2F)][website]
-[![Twitter Follow](https://img.shields.io/twitter/follow/al_drake3?style=social)][twitter]
-[![GitHub Follow](https://img.shields.io/github/followers/al-husayn?style=social)][github]
+[![Portfolio](https://shieldcn.dev/badge/Portfolio-Live-22c55e.svg?variant=outline&logo=lucide:globe)][website]
+[![Blog](https://shieldcn.dev/badge/Blog-JavaScript%20Notes-f59e0b.svg?variant=secondary&logo=lucide:book-open)](https://blog.al-husayn.dev/)
+[![YouTube](https://shieldcn.dev/badge/YouTube-AL%20Dev%20Space-ef4444.svg?logo=youtube)][youtube]
+[![Twitter](https://shieldcn.dev/badge/Twitter-%40al_drake3-0ea5e9.svg?variant=outline&logo=x)][twitter]
 
 
 
