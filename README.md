@@ -5,9 +5,6 @@
 [![Blog](https://shieldcn.dev/badge/Blog-JavaScript%20Notes-f59e0b.svg?variant=secondary&logo=lucide:book-open)](https://blog.al-husayn.dev/)
 [![YouTube](https://shieldcn.dev/badge/YouTube-AL%20Dev%20Space-ef4444.svg?logo=youtube)][youtube]
 [![Twitter](https://shieldcn.dev/badge/Twitter-%40al_drake3-0ea5e9.svg?variant=outline&logo=x)][twitter]
-[![GitHub](https://shieldcn.dev/github/stars/al-husayn/al-husayn.svg?variant=secondary&logo=github)][github]
-[![Last Commit](https://shieldcn.dev/github/commits/al-husayn/al-husayn.svg?variant=outline&logo=github)][github]
-[![Contributions Welcome](https://shieldcn.dev/badge/Contributions-Welcome-22c55e.svg?variant=outline&logo=lucide:git-pull-request)][github]
 
 
 
