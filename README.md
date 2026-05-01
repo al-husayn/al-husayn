@@ -56,7 +56,7 @@
 
 ---
 
-### ⚙️ 💡 Top 5 Featured Projects
+### ⚙️ 💡 Featured Projects
 
 
 <!-- PROJECTS:START -->
