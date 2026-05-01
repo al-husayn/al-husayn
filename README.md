@@ -56,18 +56,43 @@
 
 ---
 
-### ⚙️ 💡 Project Names and Live Demos
+### ⚙️ 💡 Top 5 Featured Projects
 
 
 <!-- PROJECTS:START -->
-> Keep an eye on the project I'm working on collaboratively. Shall be listing some here with live demos.
-> <!-- If you have the project hosted somewhere, include the link here. -->
->My Portfolio Website: [Personal Portfolio site](https://www.al-husayn.dev/)
-
-> eCommerce/Marketplace: [Community Marketplace](https://marketplace.amalitech-dev.net/)
-
->Freelance Website: [Connecting international clients and work
-in a cross-cultural setting](https://thefairwork.com/)
+<table>
+  <tr>
+    <th align="left">No.</th>
+    <th align="left">Project</th>
+    <th align="left">Description</th>
+    <th align="left">Link</th>
+  </tr>
+  <tr>
+    <td><strong>1</strong></td>
+    <td><strong>Personal Portfolio Website</strong></td>
+    <td>Professional developer brand, portfolio storytelling, responsive UI, and live project presentation.</td>
+    <td><a href="https://www.al-husayn.dev/">Live Demo</a></td>
+  </tr>
+  <tr>
+    <td><strong>2</strong></td>
+    <td><strong>JavaScript Notes Blog</strong></td>
+    <td>Technical writing, JavaScript education, structured content, SEO-friendly learning resources, and consistent publishing.</td>
+    <td><a href="https://blog.al-husayn.dev/">Read Blog</a></td>
+  </tr>
+  <tr>
+    <td><strong>3</strong></td>
+    <td><strong>Community Marketplace</strong></td>
+    <td>Marketplace flows, product discovery, commerce-focused UI, and collaborative full-stack product work.</td>
+    <td><a href="https://marketplace.amalitech-dev.net/">Live Demo</a></td>
+  </tr>
+  <tr>
+    <td><strong>4</strong></td>
+    <td><strong>The Fair Work</strong></td>
+    <td>Freelance platform experience connecting international clients and talent in a cross-cultural setting.</td>
+    <td><a href="https://thefairwork.com/">Live Demo</a></td>
+  </tr>
+</table>
+<!-- PROJECTS:END -->
 
 ---
 
