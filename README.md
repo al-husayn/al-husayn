@@ -102,6 +102,19 @@
 <table>
   <tr>
     <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/dom">
+        <img src="https://blog.al-husayn.dev/thumbnails/dom.png" width="120" alt="DOM Manipulation: How Browsers Represent Web Pages feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/dom"><strong>DOM Manipulation: How Browsers Represent Web Pages</strong></a><br />
+      <sub>May 3, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn the DOM in JavaScript. Select and manipulate elements, traverse nodes, handle events, and optimize rendering performance.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
       <a href="https://blog.al-husayn.dev/blog/recursion">
         <img src="https://blog.al-husayn.dev/thumbnails/recursion.jpg" width="120" alt="Recursion: Functions That Call Themselves feature image" />
       </a>
@@ -150,19 +163,6 @@
       <sub>March 10, 2026</sub><br />
       <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
       Learn how the JavaScript event loop handles async code. Understand the call stack, task queue, microtasks, and why Promises always run before setTimeout().
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/scope-and-closures">
-        <img src="https://blog.al-husayn.dev/thumbnails/scope-and-closures.png" width="120" alt="Scope &amp; Closures feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/scope-and-closures"><strong>Scope &amp; Closures</strong></a><br />
-      <sub>March 5, 2026</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn JavaScript scope and closures. Understand the three types of scope, var vs let vs const, lexical scoping, the scope chain, and closure patterns for data privacy.
     </td>
   </tr>
 </table>
