@@ -1,4 +1,4 @@
-# Hi there, I'm Al-Hussein - aka [AL Drake][website] 👋 
+# Al-Hussein Abubakar | [AL Drake][website]
 
 
 [![Portfolio](https://shieldcn.dev/badge/Portfolio-Live-22c55e.svg?variant=outline&logo=lucide:globe)][website]
@@ -9,14 +9,14 @@
 
 
 
-## I'm a Software Developer, Aspiring Blockchain Developer and an IT Support Specialist!!
+## Software Developer | Aspiring Blockchain Developer | IT Support Specialist
 
 
-- 🌱 I’m currently focusing on JavaScript, Typescript, React, NextJS, Python, AI, Solidity & C#  🤣
-- 👯 I’m looking to collaborate with other developers
-- 🥅 2026 Goals: Delve in deeper into blockchain development and AI
-- ⚡ Fun fact: I love playing soccer, reading and surfing the internet
-- 📫 How to reach me alhusayn532@gmail.com
+- 🌱 Currently focused on JavaScript, TypeScript, React, Next.js, Python, AI, Solidity, and C#
+- 👯 Open to collaborating with developers on impactful software projects
+- 🥅 2026 Goals: Deepen my expertise in blockchain development and AI
+- ⚡ Fun fact: I enjoy playing soccer, reading, and exploring the web
+- 📫 Contact: [alhusayn532@gmail.com](mailto:alhusayn532@gmail.com)
 
 ### Connect with me on:
 
