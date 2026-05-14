@@ -184,7 +184,7 @@
       <a href="https://www.youtube.com/watch?v=cBVbvM2PH8c"><strong>Top 5 Best Programming Languages to Learn in 2023</strong></a><br />
       <sub>January 7, 2023</sub><br />
       <sub>Channel: AL&#x27;s Dev Space</sub><br /><br />
-      Welcome to our video on the top 5 best programming languages to learn in 2023! In this video, I will discuss the most in-demand and versatile programming languages that...
+      Welcome to our video on the top 5 best programming languages to learn in 2026! In this video, I will discuss the most in-demand and versatile programming languages that...
     </td>
   </tr>
 </table>
