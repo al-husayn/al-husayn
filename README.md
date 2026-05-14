@@ -102,6 +102,19 @@
 <table>
   <tr>
     <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/higher-order-functions">
+        <img src="https://blog.al-husayn.dev/thumbnails/hof.png" width="120" alt="Higher-Order Functions feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/higher-order-functions"><strong>Higher-Order Functions</strong></a><br />
+      <sub>May 14, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn higher-order functions in JavaScript. Understand functions that accept or return other functions, create reusable abstractions, and write cleaner code.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
       <a href="https://blog.al-husayn.dev/blog/dom">
         <img src="https://blog.al-husayn.dev/thumbnails/dom.png" width="120" alt="DOM Manipulation: How Browsers Represent Web Pages feature image" />
       </a>
@@ -150,19 +163,6 @@
       <sub>March 28, 2026</sub><br />
       <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
       Learn how to organize JavaScript code with IIFEs, namespaces, and ES6 modules. Understand private scope, exports, dynamic imports, and common module mistakes.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/event-loop">
-        <img src="https://blog.al-husayn.dev/thumbnails/event-loop.webp" width="120" alt="JavaScript Event Loop Explained feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/event-loop"><strong>JavaScript Event Loop Explained</strong></a><br />
-      <sub>March 10, 2026</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn how the JavaScript event loop handles async code. Understand the call stack, task queue, microtasks, and why Promises always run before setTimeout().
     </td>
   </tr>
 </table>
