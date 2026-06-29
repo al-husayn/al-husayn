@@ -102,6 +102,19 @@
 <table>
   <tr>
     <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/tanstack-query">
+        <img src="https://blog.al-husayn.dev/thumbnails/tanstack-query.png" width="120" alt="Introduction to TanStack Query feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/tanstack-query"><strong>Introduction to TanStack Query</strong></a><br />
+      <sub>June 12, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: React</sub><br /><br />
+      TanStack Query (formerly known as React Query) is a data-fetching library for web applications, but in more technical terms, it makes fetching, caching, synchronizing and updating server state in your web applications a breeze.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
       <a href="https://blog.al-husayn.dev/blog/higher-order-functions">
         <img src="https://blog.al-husayn.dev/thumbnails/hof.png" width="120" alt="Higher-Order Functions feature image" />
       </a>
@@ -150,19 +163,6 @@
       <sub>April 16, 2026</sub><br />
       <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
       Learn how JavaScript engines work. Understand V8&#x27;s parsing, JIT compilation, hidden classes, inline caching, and garbage collection.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/iife-modules">
-        <img src="https://blog.al-husayn.dev/thumbnails/iife.png" width="120" alt="IIFE, Modules &amp; Namespaces: Structuring Code feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/iife-modules"><strong>IIFE, Modules &amp; Namespaces: Structuring Code</strong></a><br />
-      <sub>March 28, 2026</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn how to organize JavaScript code with IIFEs, namespaces, and ES6 modules. Understand private scope, exports, dynamic imports, and common module mistakes.
     </td>
   </tr>
 </table>
