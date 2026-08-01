@@ -102,6 +102,19 @@
 <table>
   <tr>
     <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/react-custom-hooks">
+        <img src="https://blog.al-husayn.dev/thumbnails/react-custom-hooks.png" width="120" alt="9 React Custom Hooks You&#x27;ll Actually Reuse in Real Projects feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/react-custom-hooks"><strong>9 React Custom Hooks You&#x27;ll Actually Reuse in Real Projects</strong></a><br />
+      <sub>July 31, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      A practical guide to React custom hooks that solve real production problems, from API fetching and forms to authentication, performance, and browser APIs.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
       <a href="https://blog.al-husayn.dev/blog/tanstack-query">
         <img src="https://blog.al-husayn.dev/thumbnails/tanstack-query.png" width="120" alt="Introduction to TanStack Query feature image" />
       </a>
@@ -150,19 +163,6 @@
       <sub>April 17, 2026</sub><br />
       <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
       Learn recursion in JavaScript. Understand base cases, recursive calls, the call stack, and patterns like factorial, tree traversal, and memoization.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/javascript-engines">
-        <img src="https://blog.al-husayn.dev/thumbnails/js-engine.png" width="120" alt="JavaScript Engines: How V8 Runs Your Code feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/javascript-engines"><strong>JavaScript Engines: How V8 Runs Your Code</strong></a><br />
-      <sub>April 16, 2026</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn how JavaScript engines work. Understand V8&#x27;s parsing, JIT compilation, hidden classes, inline caching, and garbage collection.
     </td>
   </tr>
 </table>
