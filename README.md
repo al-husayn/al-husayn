@@ -102,6 +102,19 @@
 <table>
   <tr>
     <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/http-fetch">
+        <img src="https://blog.al-husayn.dev/thumbnails/fetch.png" width="120" alt="HTTP &amp; Fetch API: Making HTTP Requests the Modern Way feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/http-fetch"><strong>HTTP &amp; Fetch API: Making HTTP Requests the Modern Way</strong></a><br />
+      <sub>August 27, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn the JavaScript Fetch API for HTTP requests. Covers GET, POST, response handling, JSON parsing, and AbortController.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
       <a href="https://blog.al-husayn.dev/blog/react-custom-hooks">
         <img src="https://blog.al-husayn.dev/thumbnails/react-custom-hooks.png" width="120" alt="9 React Custom Hooks You&#x27;ll Actually Reuse in Real Projects feature image" />
       </a>
@@ -150,19 +163,6 @@
       <sub>May 3, 2026</sub><br />
       <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
       Learn the DOM in JavaScript. Select and manipulate elements, traverse nodes, handle events, and optimize rendering performance.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/recursion">
-        <img src="https://blog.al-husayn.dev/thumbnails/recursion.jpg" width="120" alt="Recursion: Functions That Call Themselves feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/recursion"><strong>Recursion: Functions That Call Themselves</strong></a><br />
-      <sub>April 17, 2026</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn recursion in JavaScript. Understand base cases, recursive calls, the call stack, and patterns like factorial, tree traversal, and memoization.
     </td>
   </tr>
 </table>
