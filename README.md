@@ -102,6 +102,19 @@
 <table>
   <tr>
     <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/web-workers">
+        <img src="https://blog.al-husayn.dev/thumbnails/web-workers.jpg" width="120" alt="Web Workers in JavaScript: True Parallelism feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/web-workers"><strong>Web Workers in JavaScript: True Parallelism</strong></a><br />
+      <sub>September 7, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn Web Workers in JavaScript for running code in background threads. Understand postMessage, Dedicated and Shared Workers, and transferable objects.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
       <a href="https://blog.al-husayn.dev/blog/http-fetch">
         <img src="https://blog.al-husayn.dev/thumbnails/fetch.png" width="120" alt="HTTP &amp; Fetch API: Making HTTP Requests the Modern Way feature image" />
       </a>
@@ -150,19 +163,6 @@
       <sub>May 14, 2026</sub><br />
       <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
       Learn higher-order functions in JavaScript. Understand functions that accept or return other functions, create reusable abstractions, and write cleaner code.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/dom">
-        <img src="https://blog.al-husayn.dev/thumbnails/dom.png" width="120" alt="DOM Manipulation: How Browsers Represent Web Pages feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/dom"><strong>DOM Manipulation: How Browsers Represent Web Pages</strong></a><br />
-      <sub>May 3, 2026</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn the DOM in JavaScript. Select and manipulate elements, traverse nodes, handle events, and optimize rendering performance.
     </td>
   </tr>
 </table>
