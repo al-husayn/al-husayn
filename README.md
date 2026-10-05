@@ -102,6 +102,19 @@
 <table>
   <tr>
     <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/factories-classes">
+        <img src="https://blog.al-husayn.dev/thumbnails/factories-classes.webp" width="120" alt="Factories and Classes: Creating Objects Efficiently feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/factories-classes"><strong>Factories and Classes: Creating Objects Efficiently</strong></a><br />
+      <sub>October 4, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
+      Learn JavaScript factory functions and ES6 classes. Understand constructors, prototypes, private fields, inheritance, and when to use each pattern.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
       <a href="https://blog.al-husayn.dev/blog/web-workers">
         <img src="https://blog.al-husayn.dev/thumbnails/web-workers.jpg" width="120" alt="Web Workers in JavaScript: True Parallelism feature image" />
       </a>
@@ -150,19 +163,6 @@
       <sub>June 12, 2026</sub><br />
       <sub>Creator: Al-Hussein | Category: React</sub><br /><br />
       TanStack Query (formerly known as React Query) is a data-fetching library for web applications, but in more technical terms, it makes fetching, caching, synchronizing and updating server state in your web applications a breeze.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/higher-order-functions">
-        <img src="https://blog.al-husayn.dev/thumbnails/hof.png" width="120" alt="Higher-Order Functions feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/higher-order-functions"><strong>Higher-Order Functions</strong></a><br />
-      <sub>May 14, 2026</sub><br />
-      <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
-      Learn higher-order functions in JavaScript. Understand functions that accept or return other functions, create reusable abstractions, and write cleaner code.
     </td>
   </tr>
 </table>
