@@ -102,6 +102,19 @@
 <table>
   <tr>
     <td width="132" valign="top">
+      <a href="https://blog.al-husayn.dev/blog/vite-plus">
+        <img src="https://blog.al-husayn.dev/thumbnails/vite-plus.jpg" width="120" alt="I Will Never Use Prettier or ESLint Again? A Practical Guide to Vite+ feature image" />
+      </a>
+    </td>
+    <td valign="top">
+      <a href="https://blog.al-husayn.dev/blog/vite-plus"><strong>I Will Never Use Prettier or ESLint Again? A Practical Guide to Vite+</strong></a><br />
+      <sub>October 23, 2026</sub><br />
+      <sub>Creator: Al-Hussein | Category: Dev Tools</sub><br /><br />
+      Vite+ brings development, tests, linting, formatting, package builds, tasks, and runtime management under the vp CLI. Learn how it works and what migration really involves.
+    </td>
+  </tr>
+  <tr>
+    <td width="132" valign="top">
       <a href="https://blog.al-husayn.dev/blog/factories-classes">
         <img src="https://blog.al-husayn.dev/thumbnails/factories-classes.webp" width="120" alt="Factories and Classes: Creating Objects Efficiently feature image" />
       </a>
@@ -150,19 +163,6 @@
       <sub>July 31, 2026</sub><br />
       <sub>Creator: Al-Hussein | Category: JavaScript</sub><br /><br />
       A practical guide to React custom hooks that solve real production problems, from API fetching and forms to authentication, performance, and browser APIs.
-    </td>
-  </tr>
-  <tr>
-    <td width="132" valign="top">
-      <a href="https://blog.al-husayn.dev/blog/tanstack-query">
-        <img src="https://blog.al-husayn.dev/thumbnails/tanstack-query.png" width="120" alt="Introduction to TanStack Query feature image" />
-      </a>
-    </td>
-    <td valign="top">
-      <a href="https://blog.al-husayn.dev/blog/tanstack-query"><strong>Introduction to TanStack Query</strong></a><br />
-      <sub>June 12, 2026</sub><br />
-      <sub>Creator: Al-Hussein | Category: React</sub><br /><br />
-      TanStack Query (formerly known as React Query) is a data-fetching library for web applications, but in more technical terms, it makes fetching, caching, synchronizing and updating server state in your web applications a breeze.
     </td>
   </tr>
 </table>
